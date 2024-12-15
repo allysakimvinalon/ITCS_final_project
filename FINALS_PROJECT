@@ -1,0 +1,256 @@
+def activity1():
+    print("Hello World!")
+
+def activity2():
+    name = input("Please enter your name --->  ")
+
+    print("Hi, " + name + ", good afternoon!")
+
+def activity3():
+    name = input("Please input your name here ---> ")
+    fname = input("Please input your fname here ---> ")
+    mname = input("Please input your mname here ---> ")
+    birthdate = input("Please input your birth date here ---> ")
+    birthmonth = input("Please input your birthmonth here ---> ")
+    birthyear = input("Please input your birthyear here ---> ")
+    maritalstatus = input("Please input your maritalstatus here ---> ")
+    religion = input("Please input your religion here ---> ")
+    ethnicity = input("Please input your ethnicity here ---> ")
+    mobile = input("Please input your mobile here ---> ")
+    email = input("Please input your email here ---> ")
+    gender = input("Please input your gender here ---> ")
+    address = input("Please input your address here ---> ")
+    age = input(" Please input your age here ---> ")
+
+    print("\n\n\n\n\tHello, My name is,", name ,"I'm", age ,"yrs old.\n\tI identify as", gender ,"\n\tMy father's name is", fname ,"\n\tMy mother's name is", mname ,"\n\tMy Bithday is in", birthmonth , birthdate , birthyear ,"\n\tI live in", address,"\n\tI am", maritalstatus ,"\n\tI am", ethnicity ,"Citizen\n\tMy mobile number is:", mobile ,"\n\tYou may contact me in my email:", email ,"\n\tThank You!!!\n\n\n")
+
+def activity4():
+    number1 = eval(input("Enter a number : "))
+    number2 = eval(input("Enter another number : "))
+
+    sum = number1 + number2
+    difference = number1 - number2
+    product = number1 * number2
+    quotient = number1 / number2
+    exponent = number1 ** number2
+    reminder = number1 % number2
+    floordivision = number1 // number2
+
+    print("The sum of" , number1 , "and" , number2 , "is" , sum)
+    print("The difference of" , number1 , "and" , number2 , "is" , difference)
+    print("The product of" , number1  , "and" , number2 , "is" , product)
+    print("The quotient of" , number1 , "and" , number2 , "is" , quotient)
+    print("The exponent of" , number1 , "and" , number2 , "is" , exponent)
+    print("The reminder of" , number1 , "and" , number2 , "is" , reminder)
+    print("The floor division of" , number1 , "and" , number2 , "is" , floordivision)
+
+def activity5():
+    print("FAHRENHEIT TO CELCIUS CONVERTER")
+
+    temp = eval(input("Enter temperature in Fahrenheit: "))
+
+    celsius = (temp - 32) * 5/9
+
+    print(f"The Conversion of {temp} degrees Fahrenheit is {round(celsius, 2)} degree celsius.")
+
+def activity6():
+    #assignment operator activity
+
+    x = 10
+
+    print(x)
+
+    #how to update the value of x 
+
+    x = x + 2
+
+    print(x)
+
+    #simplified version
+    x += 4
+    print(x) 
+
+    x += 6
+    print(x)
+
+    #other arithmetic
+    x -= 8
+    print(x)
+
+    #other arithmetic
+    x *= 10
+    print(x)
+
+    #other arithmetic
+    x /= 12
+    print(x)
+
+def activity7():
+    #conditional statements
+
+    gold = 0
+
+    miner = input("Hi, please enter your name :")
+
+    #answerable by yes or no
+
+    hasMine = input("Did you mine gold today?")
+
+    #introduction to decision structure and relational operators
+
+    if hasMine.lower() == "yes":
+        gold += 1
+        print(f"Hi, {miner}, today you have a total of {gold} gold.")
+    else: 
+        print(f"Hi, {miner}, today you have a total of {gold} gold.")
+
+def activity8():
+    password = input("Enter your password:  ")
+
+    if password.lower() == "allysakim123":
+        print("Your password is correct. Try again.")
+        print("Enjoy using the system.")
+
+    elif password.lower() == "password":
+        print("Access Granted.")
+        print("Enjoy using the system.")
+
+    else :
+        print("Your password is incorrect.")
+
+    print("Thank you so much.")
+
+def activity9():
+    age = eval(input("Enter your age: "))
+
+    if age >= 1 and age <= 7 :
+        print("You are considered Toddler.")
+    elif age >= 8 and age <= 13:
+        print("You are considered Pre-Teen.")
+    elif age >= 14 and age <= 18 :
+        print("You are considered Teenager.")
+    elif age >= 19 and age <= 31:
+        print("You are considered Early Adulthood.")
+    elif age >= 32 and age <= 45 :
+        print("You are considered Mid Adulthood.")
+    elif age >= 46 and age <= 59 :
+        print("You are considered Post Adulthood.")
+    elif age >= 60 :
+        print("You are considered Senior.")
+    else :
+        print ("Sorry, we cannot find the age you entered. Try again.")
+
+def activity10():
+    #create a program for scholarship grant for DLL BSIT student
+
+    isDLL = input("Are you a current student of DLL [yes / no] :  ")
+
+    if isDLL.lower() == "yes" :
+        print("Welcome to the DLL Scholarship form. ")
+
+        isPB = input("Are you a resident from Pagbilao? [yes / no] : ")
+
+        if isPB.lower() == "yes" :
+            print("Thank you. Now, proceed to the question below. ")
+
+            isLevel = input("What is your current year level at DLL? \nF - Freshman\nSo - Sophomore\nJ - Junior\nS - Senior\nPlease input your answer : ")
+            if isLevel.lower() == 'f' :
+                print("Welcome, freshman." )
+            elif isLevel.lower() == 'sp' :
+                print("Welcome, sophomore." )
+            elif isLevel.lower() == 'j' :
+                print("Welcome, junior." )
+            elif isLevel.lower() == 's' :
+                print("Welcome, senior.")
+            else :
+                print("They keyword you input is invalid.")
+        else :
+            print("Sorry, this scholarship form is only for residents of Pagbilao.")
+
+        isNeeded = input("Do you need this scholarship? [yes / no] : ")
+        
+        if isNeeded.lower() == "yes" : 
+            print("Welcome to this platform. ")
+        else : 
+            print("Thank you for stopping by. See you next time." )
+
+    else :	
+        print("Sorry, this scholarship is only for DLL students.")
+
+def activity11():
+    #Print hello world 10 times
+
+    for cycles in range (1, 11):
+        print("Hello World!")
+        print("Happy Foundation Day.")
+        name = input("What is your name? --->  ")
+        print(f"Hi, {name}.")
+
+def activity12():
+    
+    # x =int(input("Enter first number: "))
+    # y =int(input("Enter second number: "))
+    # yy = x + y
+    # z = print(f"The sum of {x} and {y} is {yy}.")
+    # print()
+    pass
+def hello_world():
+    print("Hello World!")
+    print("print('Hello World!')")
+    print()
+    print("Output: Hello World!")
+    print()
+
+def temp():
+    print("<<<<<<temperature conversion>>>>>") 
+    x =int(input("would you like to convert degrees to fahrenheit(yes\no)"))
+    if x == "yes":
+        a = int(input("enter a temperature in degrees: "))
+        if a >= 0:
+            b = (a -32)*5/9
+            print(f"the conversion of {a} is {b}")
+def main():
+    while True:
+        print("enter a command based on categories")
+        print("commands (1-10)")
+        x = input("enter a command: ")
+        if x == "exit":
+            print("program terminated")
+            break
+        elif x != "exit":
+            if x == "1":
+                while True:
+                    print()
+                    print("0. exit to main dashboard")
+                    print("1. activity 1")
+                    print("2. Hello World")
+                    y = input("enter a command: ")
+                    if y == "0":
+                        main()
+                        break
+                        
+                    elif y == "1":
+                        activity1()
+                    elif y == "2":
+                        hello_world()
+                    elif x == "exit":
+                        break
+                    else: 
+                        print("invalid input")
+                    continue
+            elif x == 2:
+                hello_world()
+            elif x == 3:
+                temp()
+                print()
+            elif x == 4:
+                pass
+            elif x == 5:
+                pass
+            elif x == 6:
+                pass
+            elif x == 7:
+                pass
+            elif x == 8:
+                pass
+main()            
